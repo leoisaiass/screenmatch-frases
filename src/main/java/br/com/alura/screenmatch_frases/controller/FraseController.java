@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch_frases.controller;
 
-import br.com.alura.screenmatch_frases.dto.SerieDTO;
+import br.com.alura.screenmatch_frases.dto.FraseDTO;
 import br.com.alura.screenmatch_frases.service.FraseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +15,7 @@ public class FraseController {
     private FraseService servico;
 
     @GetMapping()
-    public SerieDTO obterFrases() {
+    public FraseDTO obterFrases() {
         return servico.obterFrases();
     }
 }
